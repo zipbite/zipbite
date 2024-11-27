@@ -44,10 +44,6 @@ export default function Home() {
             learn and grow.
           </Text>
           <Text>
-            I'm currently working on a few side projects and looking for new opportunities. If you're interested in
-            working together, feel free to reach out.
-          </Text>
-          <Text>
             The website is still a <span className="italic text-zinc-200">work in progress</span>, so please excuse the mess. I'm working on adding more content and
             features, so stay tuned for updates.
           </Text>
