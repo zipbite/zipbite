@@ -1,0 +1,19 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles */
+@layer base {
+  html, body {
+    font-family: 'Ubuntu', sans-serif;
+    @apply bg-zinc-950 text-zinc-300;
+  }
+
+  code, pre {
+    font-family: 'Ubuntu Mono', monospace;
+  }
+}
