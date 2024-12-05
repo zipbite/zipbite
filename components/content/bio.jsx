@@ -31,7 +31,10 @@ export default function Bio(props) {
               <p className="text-zinc-100 font-semibold">zipbite</p>
             </div>
             <div className='flex items-center gap-2'>
-              <LuCheck size={20} className='text-emerald-500' />
+              <div className='relative'>
+                <LuCheck size={20} className='text-emerald-500 absolute top-0 left-0 animate-ping' />
+                <LuCheck size={20} className='text-emerald-500' />
+              </div>
               <p>Available For Work</p>
             </div>
           </div>
