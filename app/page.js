@@ -79,7 +79,7 @@ export default function Home() {
             </div>
             <div className='flex items-center gap-2'>
               <RiBlueskyLine size={20} />
-              <a href="https://bsky.app/profile/zipbyte.dev" className="text-zinc-100 font-semibold" target="_blank">zipbite.dev</a>
+              <a href="https://bsky.app/profile/zipbyte.dev" className="text-zinc-100 font-semibold" target="_blank">zipbyte.dev</a>
             </div>
             <div className='flex items-center gap-2'>
               <LuGithub size={20} />
