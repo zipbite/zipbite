@@ -20,7 +20,6 @@ export default function Home() {
       }
       const data = await response.json();
       setSong(data);
-      console.log(data);
     };
 
     fetchSong();
