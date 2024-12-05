@@ -32,11 +32,11 @@ export default function Home() {
           <img src="/header.jpg" layout="fill" className="object-center object-cover absolute inset-0 w-full h-72 rounded-b z-0" />
       </div>
       <div className='flex items-start justify-between'>
-        <div className="flex items-center -mt-12 ml-8 md:ml-14 z-20">
+        <div className="flex items-center -mt-12 ml-8 lg:ml-14 z-20">
           <ShowOnDesktop>
             <img src="/pfp.jpg" className={`ring-2 ring-offset-2 ring-offset-zinc-950 ${song && song.isPlaying ? 'ring-emerald-400' : 'ring-red-500'} rounded-full relative z-10 w-32 h-32 object-center object-cover`} />
           </ShowOnDesktop>
-          <div className="flex flex-col md:ml-6 gap-2">
+          <div className="flex flex-col lg:ml-6 gap-2">
             <div className="flex flex-col">
               <p className="font-bold text-zinc-100 text-lg">Zipbyte</p>
               <p className="font-semibold text-sm">@zipbyte</p>
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
         {song && song.isPlaying && (
           <ShowOnDesktop>
-            <Link target="_blank" href={song.songUrl} className='group z-20 px-4 py-2 flex flex-col gap-1 -mt-7 mr-8 md:ml-14'>
+            <Link target="_blank" href={song.songUrl} className='group z-20 px-4 py-2 flex flex-col gap-1 -mt-7 mr-8 lg:ml-14'>
               <div className='flex items-center justify-between'>
                 <div className='relative z-20 -mt-4'>
                   <LuMusic size={20} className='rounded-full text-xs text-emerald-500 absolute z-30 animate-ping' />
@@ -65,7 +65,7 @@ export default function Home() {
           </ShowOnDesktop>
         )}
       </div>
-      <div className="grid md:grid-cols-5 gap-12 md:gap-4 mt-12 pl-8 space-x-2 w-full">
+      <div className="grid lg:grid-cols-5 gap-12 lg:gap-4 mt-12 pl-8 space-x-2 w-full">
         <Bio />
         <div className='flex flex-col col-span-4 gap-8 w-full'>
           <Projects />

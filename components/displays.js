@@ -1,6 +1,6 @@
 export function ShowOnMobile({ children }) {
   return (
-    <div className="block md:hidden">
+    <div className="block lg:hidden">
       {children}
     </div>
   );
@@ -8,7 +8,7 @@ export function ShowOnMobile({ children }) {
 
 export function ShowOnDesktop({ children }) {
   return (
-    <div className="hidden md:block">
+    <div className="hidden lg:block">
       {children}
     </div>
   );
