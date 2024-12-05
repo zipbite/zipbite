@@ -1,9 +1,9 @@
 'use client';
 
 import { ShowOnDesktop, ShowOnMobile } from '@/components/displays';
-import { LuMail, LuGithub, LuUser, LuCheck, LuMusic } from 'react-icons/lu';
 import { useState, useEffect } from 'react';
-import { RiDiscordLine } from 'react-icons/ri';
+import { LuMail, LuGithub, LuUser, LuCheck, LuMusic } from 'react-icons/lu';
+import { RiDiscordLine, RiBlueskyLine } from 'react-icons/ri';
 import Link from 'next/link';
 
 export default function Home() {
@@ -76,6 +76,10 @@ export default function Home() {
             <div className='flex items-center gap-2'>
               <LuMail size={20} />
               <a href="mailto:zipbite@protonmail.com" className="text-zinc-100 font-semibold" target="_blank">zipbite@protonmail.com</a>
+            </div>
+            <div className='flex items-center gap-2'>
+              <RiBlueskyLine size={20} />
+              <a href="https://bsky.app/profile/zipbyte.dev" className="text-zinc-100 font-semibold" target="_blank">zipbite.dev</a>
             </div>
             <div className='flex items-center gap-2'>
               <LuGithub size={20} />
