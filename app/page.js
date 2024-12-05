@@ -71,7 +71,7 @@ export default function Home() {
                 <LuUser size={20} />
                 <p className="text-zinc-100 font-semibold">About Me</p>
               </div>
-              <p>Self-taught full stack developer with 6+ years experience in responsive websites. Skilled in HTML, CSS, JavaScript, React, and Node.js, with a passion for learning.</p>
+              <p>Self-taught full stack developer with 6+ years experience in web applications. Skilled in HTML, CSS, JavaScript, React, and Node.js, with a passion for learning.</p>
             </div>
             <div className='flex items-center gap-2'>
               <LuMail size={20} />
