@@ -14,8 +14,19 @@ export default function Post() {
         </div>
         <div className='flex flex-col gap-8 -mt-10 z-30'>
             <div className="flex flex-wrap gap-4 items-center justify-between px-12">
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col lg:flex-row lg:gap-3 lg:items-center gap-1">
                     <h3 className="text-xl uppercase font-bold text-zinc-100">Post Title</h3>
+                    <div className='flex flex-wrap items-center gap-1 text-xs font-semibold uppercase'>
+                        <span className='bg-zinc-900 px-2 py-0.5 rounded'>
+                            #tag1
+                        </span>
+                        <span className='bg-zinc-900 px-2 py-0.5 rounded'>
+                            #tag2
+                        </span>
+                        <span className='bg-zinc-900 px-2 py-0.5 rounded'>
+                            #tag3
+                        </span>
+                    </div>
                 </div>
                 <div className="flex items-center gap-8">
                     <div className='flex items-center gap-2'>
