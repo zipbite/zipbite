@@ -29,7 +29,7 @@ export default function Home() {
     <section className="flex flex-col mb-32">
       <div className="flex flex-col relative h-72">
         <div className="h-72 w-full absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-zinc-950/60 z-10" />
-          <img src="/header.jpg" layout="fill" className="object-center object-cover absolute inset-0 w-full h-72 rounded z-0" />
+          <img src="/header.jpg" layout="fill" className="object-center object-cover absolute inset-0 w-full h-72 rounded-b z-0" />
       </div>
       <div className='flex items-start justify-between'>
         <div className="flex items-center -mt-12 ml-8 md:ml-14 z-20">
