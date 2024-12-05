@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "Zipbyte",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       >
         <main className="max-w-7xl mx-auto">
           {children}
+          <Analytics />
         </main>
       </body>
     </html>
