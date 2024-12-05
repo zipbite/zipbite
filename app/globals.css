@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Cyber';
+  src: url('/CYBERBANG.ttf') format('truetype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,body {
+    @apply bg-zinc-950 text-zinc-400;
+  }
+}
+
+@layer components {
+  .text-cyber {
+    font-family: 'Cyber', sans-serif;
+  }
+}
