@@ -63,6 +63,25 @@ export default function Home() {
             </Link>
           </ShowOnDesktop>
         )}
+        {song && !song.isPlaying && (
+          <ShowOnDesktop>
+            <div className='group z-20 px-4 py-2 flex flex-col gap-1 -mt-7 mr-8 lg:ml-14'>
+              <div className='flex items-center justify-between'>
+                <div className='relative z-20 -mt-4'>
+                  <LuMusic size={20} className='rounded-full text-xs text-zinc-400 absolute z-20' />
+                </div>
+                <p className='z-20 font-bold uppercase text-xs text-zinc-400 self-end'>Listening to</p>
+              </div>
+              <div className='z-20 flex gap-3 bg-zinc-950 border-b-2 border-zinc-800 pl-1.5 pr-20 py-1.5 rounded-md'>
+                <img src="/no-song.png" className="z-20 w-10 h-10 object-cover rounded grayscale transition-all duration-300 ease-in-out" />
+                <div className='z-20 flex flex-col justify-center'>
+                  <p className='z-20 text-zinc-100 font-semibold text-sm max-w-32 truncate'>No song active</p>
+                  <p className='z-20 text-zinc-300 text-xs max-w-32 truncate'>No Artist</p>
+                </div>
+              </div>
+            </div>
+          </ShowOnDesktop>
+        )}
       </div>
       <div className="grid lg:grid-cols-5 gap-12 lg:gap-4 mt-12 pl-8 space-x-2 w-full">
         <Bio />
