@@ -28,13 +28,11 @@ export default function Home() {
     <section className="flex flex-col mb-32">
       <div className="flex flex-col relative h-72">
         <div className="h-72 w-full absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-zinc-950/60 z-10" />
-          <img src="/header.jpg" layout="fill" className="object-center object-cover absolute inset-0 w-full h-72 rounded-b z-0" />
+          <img src="/banner.gif" layout="fill" className="object-center object-cover absolute inset-0 w-full h-72 rounded-b z-0" />
       </div>
       <div className='flex items-start justify-between'>
-        <div className="flex items-center -mt-12 ml-8 lg:ml-14 z-20">
-          <ShowOnDesktop>
-            <img src="/pfp.jpg" className={`ring-2 ring-offset-2 ring-offset-zinc-950 ${song && song.isPlaying ? 'ring-emerald-400' : 'ring-red-500'} rounded-full relative z-10 w-32 h-32 object-center object-cover`} />
-          </ShowOnDesktop>
+        <div className="flex flex-col md:flex-row md:items-center gap-8 -mt-12 ml-8 lg:ml-14 z-20">
+          <img src="/pfp.jpg" className={`ring-2 ring-offset-2 ring-offset-zinc-950 ${song && song.isPlaying ? 'ring-emerald-400' : 'ring-red-500'} rounded-md md:rounded-full relative z-10 w-32 h-32 object-center object-cover`} />
           <div className="flex flex-col lg:ml-6 gap-2">
             <div className="flex flex-col">
               <p className="font-bold text-zinc-100 text-lg">Zipbyte</p>
@@ -83,12 +81,18 @@ export default function Home() {
           </ShowOnDesktop>
         )}
       </div>
-      <div className="grid lg:grid-cols-5 gap-12 lg:gap-4 mt-12 pl-8 space-x-2 w-full">
+      <div className="grid lg:grid-cols-5 gap-12 lg:gap-4 mt-16 px-8 space-x-2 w-full">
         <Bio />
-        <div className='flex flex-col col-span-4 gap-8 w-full'>
+        <div className='flex flex-col col-span-3 gap-8 w-full'>
           <Projects />
           <div className='border-b-2 border-zinc-900 border-dashed' />
           <Posts />
+        </div>
+        <div className='col-span-1 hidden lg:flex flex-col gap-8 border-l-2 border-zinc-900 border-dashed px-4'>
+          <div className='relative w-full h-full'>
+            <div className='absolute inset-0 bg-zinc-950/80' />
+            <img src="/sidebar.jpg" className="rounded-md w-full h-full object-center object-cover" />
+          </div>
         </div>
       </div>
     </section>
