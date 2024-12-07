@@ -11,6 +11,7 @@ import { LuMusic } from 'react-icons/lu';
 export default function Home() {
   // Fetch the currently playing song
   const [song, setSong] = useState(null);
+  const [motionSick, setMotionSick] = useState(false);
 
   useEffect(() => {
     const fetchSong = async () => {
@@ -27,8 +28,15 @@ export default function Home() {
   return (
     <section className="flex flex-col mb-32">
       <div className="flex flex-col relative h-72">
+        <button onClick={() => setMotionSick(!motionSick)} className="absolute top-0 right-0 border-2 border-zinc-100 text-zinc-100 text-xs font-bold uppercase hover:text-zinc-950 hover:bg-zinc-100 transition-all duration-150 ease-linear px-8 py-1.5 rounded z-30 w-max my-6 mx-12">
+          Animation {motionSick ? 'On' : 'Off'}
+        </button>
         <div className="h-72 w-full absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-zinc-950/60 z-10" />
+        {motionSick ? (
+          <img src="/header.jpg" layout="fill" className="object-center object-cover absolute inset-0 w-full h-72 rounded-b z-0" />
+          ) : (
           <img src="/banner.gif" layout="fill" className="object-center object-cover absolute inset-0 w-full h-72 rounded-b z-0" />
+        )}
       </div>
       <div className='flex items-start justify-between'>
         <div className="flex flex-col md:flex-row md:items-center gap-8 -mt-12 ml-8 lg:ml-14 z-20">
